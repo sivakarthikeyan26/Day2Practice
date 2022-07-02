@@ -7,12 +7,17 @@ public class Day_2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
-		String reverse = "";
-		String num = sc.nextLine();
-		int length = num.length();
-		for (int i = length - 1; i >= 0; i--)
-			reverse = reverse + num.charAt(i);
-		System.out.println(reverse);
+		int number, i, sum = 0;
+		sc = new Scanner(System.in);
+		
+		System.out.print(" Please Enter any Number : ");
+		number = sc.nextInt();	
+		
+		for(i = 1; i <= number; i++)
+		{
+			sum = sum + i; 
+		}	
+		
+		System.out.println("\n The Sum of Natural Numbers from 1 to "+ number + " = " + sum);
 	}
-
 }
