@@ -8,12 +8,54 @@ public class Day_2 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
 		int n = sc.nextInt();
-	    int th,h,t,u;  
-	 
-	    u=n%10; 
-	    t=(n/10)%10; 
-	    h=(n/100)%10; 
-	    th=n/1000; 
-	    System.out.println("ones= "+u+" tens = "+t+" hundreds = "+h+" thousands= "+th);
+		switch (n)
+
+		{
+
+		case 0: System.out.println("Zero");
+
+		break;
+
+		case 1: System.out.println("One");
+
+		break;
+
+		case 2: System.out.println("Two");
+
+		break;
+
+		case 3: System.out.println("Three");
+
+		break;
+
+		case 4: System.out.println("Four");
+
+		break;
+
+		case 5: System.out.println("Five");
+
+		break;
+
+		case 6: System.out.println("Six");
+
+		break;
+
+		case 7: System.out.println("Seven");
+
+		break;
+
+		case 8: System.out.println("Eight");
+
+		break;
+
+		case 9: System.out.println("Nine");
+
+		break;
+
+		default : System.out.println("You entered wrong input ");
+
+		break;
+
+		}
 	}
 }
