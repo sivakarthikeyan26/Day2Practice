@@ -7,17 +7,13 @@ public class Day_2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
-		int number, i, sum = 0;
-		sc = new Scanner(System.in);
-		
-		System.out.print(" Please Enter any Number : ");
-		number = sc.nextInt();	
-		
-		for(i = 1; i <= number; i++)
-		{
-			sum = sum + i; 
-		}	
-		
-		System.out.println("\n The Sum of Natural Numbers from 1 to "+ number + " = " + sum);
+		int n = sc.nextInt();
+	    int th,h,t,u;  
+	 
+	    u=n%10; 
+	    t=(n/10)%10; 
+	    h=(n/100)%10; 
+	    th=n/1000; 
+	    System.out.println("ones= "+u+" tens = "+t+" hundreds = "+h+" thousands= "+th);
 	}
 }
